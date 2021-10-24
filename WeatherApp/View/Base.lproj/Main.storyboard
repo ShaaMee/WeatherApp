@@ -11,13 +11,13 @@
         <!--Weather List Table View Controller-->
         <scene sceneID="a04-ZY-9h8">
             <objects>
-                <tableViewController id="Zma-ZT-kth" customClass="WeatherListTableViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Zma-ZT-kth" customClass="WeatherListTableViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xfy-vk-kWz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherListCell" id="twO-id-irx" customClass="WeatherListTableViewCell" customModule="MVC" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherListCell" id="twO-id-irx" customClass="WeatherListTableViewCell" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="twO-id-irx" id="TSa-oi-EWc">
@@ -67,7 +67,7 @@
         <!--Detail Weather View Controller-->
         <scene sceneID="dA5-Li-OXJ">
             <objects>
-                <viewController id="liT-ca-4R3" customClass="DetailWeatherViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="liT-ca-4R3" customClass="DetailWeatherViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKS-TT-fMO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,6 +165,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="LWK-0B-WuQ" id="CnI-cb-eSk"/>
                         <outlet property="feelsLikeLabel" destination="VVs-Nk-lv6" id="cap-Bf-7sJ"/>
+                        <outlet property="goBackButton" destination="4bX-MN-Q0Y" id="JDc-MD-tJx"/>
                         <outlet property="humidityLabel" destination="VmQ-Lb-q7j" id="zqc-Eu-jiF"/>
                         <outlet property="pressureLabel" destination="a6l-QY-2qo" id="CMo-Cb-Pb4"/>
                         <outlet property="tempLabel" destination="hAI-ax-r0J" id="wnO-Ga-4iA"/>

@@ -10,11 +10,14 @@ class DetailWeatherViewController: UIViewController {
   @IBOutlet weak var pressureLabel: UILabel!
   @IBOutlet weak var humidityLabel: UILabel!
   @IBOutlet weak var windSpeedLabel: UILabel!
-  
+    @IBOutlet weak var goBackButton: UIButton!
+    
   var viewModel = DetailWeatherViewModel()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    goBackButton.layer.cornerRadius = 8
     
     if let weatherIconData = viewModel.weatherIconData {
       weatherIcon.image = UIImage(data: weatherIconData)
